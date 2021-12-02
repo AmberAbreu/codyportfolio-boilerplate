@@ -1,0 +1,26 @@
+{
+  "name": "codythepug",
+  "version": "1.0.0",
+  "private": true,
+  "description": "codythepug",
+  "author": "Amber Abreu",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.2.0",
+    "gatsby-plugin-image": "^2.3.0",
+    "gatsby-plugin-sharp": "^4.3.0",
+    "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-transformer-sharp": "^4.3.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
