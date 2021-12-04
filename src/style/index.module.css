@@ -32,9 +32,26 @@ header {
   height: 400px;
 }
 
-.about {
+.container {
   display: flex;
   flex-direction: row;
-  height: 300px;
+  height: 500px;
+}
+
+header .container {
   justify-content: space-evenly;
+}
+
+.projects .container {
+  justify-content: center;
+}
+
+.individual {
+  margin: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.individual:hover {
+  opacity: 50%;
 }

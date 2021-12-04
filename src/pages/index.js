@@ -21,7 +21,7 @@ export default function IndexPage() {
         </ul>
       </nav>
       <header>
-        <div className={style.about}>
+        <div className={style.container} id="about">
           <div className={style.aboutDescription}>
             <h1>Cody the Pug</h1>
             <p>Hi! I am Cody the Pug. I love kisses and hugs.</p>
@@ -74,11 +74,33 @@ export default function IndexPage() {
           />
         </div>
       </header>
-      <div className="projects">
-        {/* TWO OPTIONS HERE: if you want to display multiple projects
-        then it is worth it to map through an object. If you only want 
-        to show 2 projects, then my suggestion would be to just repeat the two elements.
-        */}
+      <div className={style.projects}>
+        <div className={style.container}>
+          <div className={style.individual}>
+            <StaticImage
+              src="../images/adoption.jpg"
+              alt="adoption project"
+              placeholder="blurred"
+              layout="fixed"
+              style={{
+                width: "500px",
+                height: "300px",
+              }}
+            />
+          </div>
+          <div className={style.individual}>
+            <StaticImage
+              src="../images/coffee.jpg"
+              alt="adoption project"
+              placeholder="blurred"
+              layout="fixed"
+              style={{
+                width: "500px",
+                height: "300px",
+              }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
