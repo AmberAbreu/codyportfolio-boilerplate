@@ -4,7 +4,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import TechStack from "../components/TechStack";
 
 export default function IndexPage() {
-  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div>
       <nav>
@@ -74,10 +73,7 @@ export default function IndexPage() {
               height: "250px",
               borderRadius: "125px",
             }}
-            onMouseEnter={() => setButtonPopup(true)}
-            onMouseLeave={() => setButtonPopup(false)}
           />
-          {buttonPopup === true ? <button>click me</button> : ""}
         </div>
       </header>
       <div className={style.projects}>
@@ -92,9 +88,8 @@ export default function IndexPage() {
                 width: "500px",
                 height: "300px",
               }}
-              onMouseEnter={() => setButtonPopup(true)}
-              onMouseLeave={() => setButtonPopup(false)}
             />
+            <button>click me</button>
           </div>
           <div className={style.individual}>
             <StaticImage
@@ -107,7 +102,7 @@ export default function IndexPage() {
                 height: "300px",
               }}
             />
-            {buttonPopup && <button>click me</button>}
+            <button>click me 2</button>
           </div>
         </div>
       </div>

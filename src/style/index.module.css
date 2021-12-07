@@ -1,3 +1,7 @@
+body {
+  background-color: #82a0aa;
+  font-family: Montserrat, Arial, Helvetica;
+}
 nav {
   display: flex;
   align-content: center;
@@ -25,17 +29,20 @@ a:hover {
 }
 a:visited {
   text-decoration: none;
+  color: black;
 }
 
 header {
   width: 100%;
   height: 400px;
+  background-color: #a3cfcd;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  height: 400px;
+  height: 350px;
+  padding-top: 30px;
 }
 
 header .container {
@@ -56,6 +63,16 @@ header .container {
   opacity: 50%;
 }
 
+.individual button {
+  display: none;
+}
+
+.individual:hover button {
+  display: inline-block;
+  position: absolute;
+  bottom: 25%;
+}
+
 .techStack {
   display: flex;
   align-items: center;
@@ -72,6 +89,7 @@ header .container {
   box-shadow: 7px 7px 6px rgb(52 52 54);
   border-radius: 10px;
   margin-bottom: 20px;
+  background-color: #a3cfcd;
 }
 
 .imgContainer {
