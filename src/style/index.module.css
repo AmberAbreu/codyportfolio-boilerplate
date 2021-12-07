@@ -35,7 +35,7 @@ header {
 .container {
   display: flex;
   flex-direction: row;
-  height: 500px;
+  height: 400px;
 }
 
 header .container {
@@ -54,4 +54,26 @@ header .container {
 
 .individual:hover {
   opacity: 50%;
+}
+
+.techStack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  box-shadow: 7px 7px 6px rgb(52 52 54);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.imgContainer {
+  flex: 0 1 calc(25%);
 }
