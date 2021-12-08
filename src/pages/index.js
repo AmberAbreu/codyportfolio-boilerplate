@@ -72,8 +72,8 @@ export default function IndexPage() {
                 height: "300px",
               }}
             />
-            <div>
-              <FontAwesomeIcon className={style.icon} icon={faGithub} />
+            <div className={style.icon}>
+              <FontAwesomeIcon icon={faGithub} />
             </div>
           </div>
           <div className={style.individual}>
@@ -88,7 +88,6 @@ export default function IndexPage() {
               }}
             />
             <div className={style.icon}>
-              BLAH
               <FontAwesomeIcon icon={faGithub} />
             </div>
           </div>

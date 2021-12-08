@@ -24,12 +24,13 @@ nav li {
 a {
   text-decoration: none;
 }
-a:hover {
-  color: gray;
-}
+
 a:visited {
   text-decoration: none;
   color: black;
+}
+a:hover {
+  color: gray;
 }
 
 header {
@@ -57,9 +58,12 @@ header .container {
   margin: 10px;
   width: 500px;
   height: 300px;
+  position: relative;
 }
 
 .individual:hover {
+  /* webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+  /* filter: blur(4px); */
   opacity: 50%;
 }
 
@@ -70,9 +74,10 @@ header .container {
 .individual:hover .icon {
   display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
+  top: 0%;
+  left: 0%;
+  z-index: 1000;
+  color: black;
 }
 
 .techStack {
