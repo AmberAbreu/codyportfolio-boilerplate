@@ -63,35 +63,39 @@ header .container {
   opacity: 50%;
 }
 
-.individual button {
+.individual .icon {
   display: none;
 }
 
-.individual:hover button {
+.individual:hover .icon {
   display: inline-block;
   position: absolute;
-  bottom: 25%;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
 }
 
 .techStack {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #a3cfcd;
 }
 
 .technologies {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 300px;
+
   box-shadow: 7px 7px 6px rgb(52 52 54);
   border-radius: 10px;
   margin-bottom: 20px;
-  background-color: #a3cfcd;
+  background: #82a0aa;
+  padding: 20px 0 0 70px;
 }
 
 .imgContainer {
   flex: 0 1 calc(25%);
+  align-content: center;
+  justify-content: center;
 }

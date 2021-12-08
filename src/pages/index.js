@@ -3,6 +3,9 @@ import * as style from "../style/index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import TechStack from "../components/TechStack";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export default function IndexPage() {
   return (
     <div>
@@ -34,34 +37,13 @@ export default function IndexPage() {
               After finishing ther web development immersive at FSA I was able
               to make this website.
             </p>
-            {/* <a href="#about" className="btn-primary">
-                About Me
-              </a>
-              <a href="#projects" className="btn-secondary">
-                Contact Me
-              </a> 
-              <a
-                href="https://twitter.com/amberabreudev"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/amber-abreu/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="https://github.com/AmberAbreu"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              */}
+
+            <a href="#" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="#" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </div>
           <StaticImage
             src="../images/cody-pug.jpg"
@@ -76,6 +58,7 @@ export default function IndexPage() {
           />
         </div>
       </header>
+
       <div className={style.projects}>
         <div className={style.container}>
           <div className={style.individual}>
@@ -89,7 +72,9 @@ export default function IndexPage() {
                 height: "300px",
               }}
             />
-            <button>click me</button>
+            <div>
+              <FontAwesomeIcon className={style.icon} icon={faGithub} />
+            </div>
           </div>
           <div className={style.individual}>
             <StaticImage
@@ -102,10 +87,14 @@ export default function IndexPage() {
                 height: "300px",
               }}
             />
-            <button>click me 2</button>
+            <div className={style.icon}>
+              BLAH
+              <FontAwesomeIcon icon={faGithub} />
+            </div>
           </div>
         </div>
       </div>
+
       <TechStack />
     </div>
   );
